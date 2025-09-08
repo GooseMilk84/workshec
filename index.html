@@ -388,9 +388,7 @@
     function updateActiveShifts() {
         sortedShifts.forEach((shift, index) => {
             const shiftCard = document.querySelector(`[data-shift-index="${index}"]`);
-            console.log(shiftCard)
             if (!shiftCard) return;
-            console.log(shift.shop)
             const currentStatus = getShiftStatus(shift.date, shift.startTime, shift.endTime);
                 const progress = calculateProgress(shift.date, shift.startTime, shift.endTime);
                 
@@ -493,4 +491,5 @@
 </body> 
 
 </html>
+
 
