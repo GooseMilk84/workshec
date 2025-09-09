@@ -259,9 +259,9 @@
 
     function calculateBreakTime(totalMinutes) {
         const hours = totalMinutes / 60;
-        if (hours >= 2 && hours < 4) return 15;
-        if (hours >= 4 && hours < 6) return 30;
-        if (hours >= 6) return 60;
+        if (hours >= 2 && hours <= 4) return 15;
+        if (hours > 4 && hours <= 6) return 30;
+        if (hours > 6) return 60;
         return 0;
     }
 
@@ -490,6 +490,7 @@
 </body> 
 
 </html>
+
 
 
 
